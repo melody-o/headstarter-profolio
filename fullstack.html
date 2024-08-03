@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fullstack-page">
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="fullstack.html">
+                    <h1>My Projects</h1>
+                </a>
+            </div>
+            <div class="header-right">
+                <input type="search" placeholder="Search...">
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="project-details">
+            <div class="project-list">
+                <!-- First project with screen recording -->
+                <div class="project-item">
+                    <h3>Journal Jotter</h3>
+                    <video autoplay muted loop playsinline>
+                        <source src="images/Screen Recording 2023-11-30 at 11.13.02 PM.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Introducing Journal Jotter – your all-in-one wellness app. Securely share diaries with therapists, track moods, and enjoy Spotify while journaling. Explore therapist blog posts and hotlines. Convenient packages for messaging and appointments, with a balance display. For therapists, manage income, view shared journals, and post resources. Crafted with FastApi and React/Redux Toolkit. Prioritize your well-being with Journal Jotter.</p>
+                    <a href="path/to/project1" target="_blank">View Project</a>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+        </section>
+        <section class="resume-section">
+            <a href="#" id="view-resume">View Resume</a>
+            <div id="resume-modal" class="modal">
+                <span class="close" id="close-modal">&times;</span>
+                <img class="modal-content" id="resume-image" src="images/Screenshot 2024-08-02 at 7.16.16 PM.png" alt="Resume">
+            </div>
+        </section>
+    </main>
+    <script>
+        // JavaScript to handle opening and closing of the resume modal
+        document.getElementById('view-resume').onclick = function() {
+            document.getElementById('resume-modal').style.display = 'block';
+        }
+        document.getElementById('close-modal').onclick = function() {
+            document.getElementById('resume-modal').style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('resume-modal')) {
+                document.getElementById('resume-modal').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
