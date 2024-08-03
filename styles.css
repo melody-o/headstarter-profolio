@@ -72,4 +72,55 @@ main {
     text-align: left;
 }
 
-.intr
+.intro-text h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.intro-image {
+    max-width: 45%;
+    text-align: right;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-item {
+    width: 30%;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
